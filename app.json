@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "studioLF",
+    "slug": "studioLF",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "studioLF"
+}
