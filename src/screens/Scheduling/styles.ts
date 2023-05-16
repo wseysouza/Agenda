@@ -16,6 +16,16 @@ export const Header = styled.View`
     padding: 30px;
 `
 
+export const Footer = styled.View`
+    width: 100%;
+
+    background-color:${({ theme }) => theme.colors.header} ;
+
+    justify-content: center;
+
+    padding: 30px;
+`
+
 export const Title = styled.Text`
     font-size:30px;    
     font-family: ${({ theme }) => theme.fonts.secundary_400};
@@ -25,11 +35,10 @@ export const Title = styled.Text`
 
 export const Content = styled.ScrollView.attrs({
     contentContainerStyle: {
-        paddingBottom: 24,
-        paddingTop: 24
-
+        paddingBottom: 2,
+        paddingTop: 50,
     },
     showsVerticalScrollIndicator: false
 })`
-    background-color:${({ theme }) => theme.colors.background_secundary_white}
+    background-color:${({ theme }) => theme.colors.background_secundary_white};
 `

@@ -3,6 +3,7 @@ import AppLoading from 'expo-app-loading';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { MainStackNavigator } from './src/routes/appNavigation';
+import AppProvider from './src/hooks';
 
 import {
   useFonts,
@@ -21,7 +22,7 @@ import theme from './src/styles/theme'
 
 
 
-export default function App() {
+const App: React.FC = () => {
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
     Poppins_500Medium,
@@ -37,8 +38,12 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <MainStackNavigator />
+        <AppProvider>
+          <MainStackNavigator />
+        </AppProvider>
       </NavigationContainer>
     </ThemeProvider>
   );
 }
+
+export default App;

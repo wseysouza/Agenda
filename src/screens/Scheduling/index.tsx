@@ -16,13 +16,13 @@ export function Scheduling({ navigation }: StackHeaderProps) {
                 <S.Title>
                     Escolha uma {'\n'}
                     data para {'\n'}
-                    abrir a agenda
+                    um agendamento
                 </S.Title>
             </S.Header>
             <S.Content>
                 <Calendar navigation={navigation} />
             </S.Content>
-
+            <S.Footer />
         </S.Container>
     )
 } 

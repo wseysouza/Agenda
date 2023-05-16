@@ -6,7 +6,6 @@ import {
 
 import { Feather } from '@expo/vector-icons'
 import { useTheme } from 'styled-components'
-import * as S from './styles';
 
 
 LocaleConfig.locales['pt-br'] = {
